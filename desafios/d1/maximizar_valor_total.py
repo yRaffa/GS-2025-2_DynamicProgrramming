@@ -2,8 +2,8 @@
 from __future__ import annotations
 from typing import Dict, Any
 
-from d1.solucao_deterministica import solucaoDeterministica
-from d1.calcular_incerteza import monteCarlo
+from .solucao_deterministica import solucaoDeterministica
+from .calcular_incerteza import monteCarlo
 
 # Resumo comparativo entre solução determinística e simulação de Monte Carlo
 def resumoComparativo(runs: int = 1000, seed: int = 42) -> Dict[str, Any]:

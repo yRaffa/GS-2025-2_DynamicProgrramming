@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Dict, Set
 
 from data.dados import dic_skills as SKILLS
-from d1.modelo_dp import *  # T_MAX, C_MAX, TARGET, valorTotal, conjuntosValidos, checaViabilidadeAlvo
+from .modelo_dp import *  # T_MAX, C_MAX, TARGET, valorTotal, conjuntosValidos, checaViabilidadeAlvo
 
 # Retorna a melhor solução viável sem o alvo
 def melhorSemAlvo():
@@ -52,9 +52,14 @@ def solucaoDeterministica():
             'Erros': feas['ERRO']
         }
     if not feas['Pre_Requisitos']:
+        motivo = (
+            f'Para incluir {TARGET} é necessário ao menos {feas['Skills']} '
+            f'(Tempo={feas['Tempo']}, Complexidade={feas['Complexidade']}), '
+            f'o que viola T≤{T_MAX}, C≤{C_MAX}.'
+        )
         return {
             'Viavel': False,
-            'Motivo': f'Para incluir {TARGET} é necessário ao menos {feas['target_base']} (Tempo={feas['target_time']}, Complexidade={feas['target_complexity']}), o que viola T≤{T_MAX}, C≤{C_MAX}.',
+            'Motivo': motivo,
             'Melhor_Sem_Alvo': melhorSemAlvo()
         }
     com_alvo = melhorComAlvo()

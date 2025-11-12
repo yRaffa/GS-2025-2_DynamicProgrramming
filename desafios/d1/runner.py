@@ -3,10 +3,10 @@ from __future__ import annotations
 from typing import Dict, Any
 from pprint import pprint
 
-from d1.modelo_dp import T_MAX, C_MAX, TARGET, checaViabilidadeAlvo
-from d1.solucao_deterministica import solucaoDeterministica
-from d1.calcular_incerteza import monteCarlo
-from d1.maximizar_valor_total import resumoComparativo
+from .modelo_dp import T_MAX, C_MAX, TARGET, checaViabilidadeAlvo
+from .solucao_deterministica import solucaoDeterministica
+from .calcular_incerteza import monteCarlo
+from .maximizar_valor_total import resumoComparativo
 
 def executarDesafio1(runs: int = 1000, seed: int = 42) -> Dict[str, Any]:
     out: Dict[str, Any] = {}

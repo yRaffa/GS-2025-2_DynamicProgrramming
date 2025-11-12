@@ -4,8 +4,8 @@ from typing import Dict, List, Tuple, Set
 import random, statistics
 
 from data.dados import dic_skills as SKILLS
-from d1.modelo_dp import valorTotal, T_MAX, C_MAX, TARGET
-from d1.solucao_deterministica import solucaoDeterministica
+from .modelo_dp import valorTotal, T_MAX, C_MAX, TARGET
+from .solucao_deterministica import solucaoDeterministica
 
 # Gera valores de skill para uma amostra (V-10%, V+10%)
 def valoresAmostra() -> Dict[str, float]:
