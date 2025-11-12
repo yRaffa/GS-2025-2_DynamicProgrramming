@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Dict, Set
 
 from data.dados import dic_skills as SKILLS
-from .modelo_dp import *  # T_MAX, C_MAX, TARGET, valorTotal, conjuntosValidos, checaViabilidadeAlvo
+from .modelo_dp import *
 
 # Retorna a melhor solução viável sem o alvo
 def melhorSemAlvo():

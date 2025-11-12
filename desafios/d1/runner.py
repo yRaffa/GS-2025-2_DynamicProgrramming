@@ -8,6 +8,7 @@ from .solucao_deterministica import solucaoDeterministica
 from .calcular_incerteza import monteCarlo
 from .maximizar_valor_total import resumoComparativo
 
+# Executa todas as etapas do desafio 01 e retorna um dicionário com os resultados
 def executarDesafio1(runs: int = 1000, seed: int = 42) -> Dict[str, Any]:
     out: Dict[str, Any] = {}
     out["Modelo_DP"] = {

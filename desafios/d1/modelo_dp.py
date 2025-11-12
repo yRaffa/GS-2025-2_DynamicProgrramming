@@ -4,7 +4,7 @@ from typing import Dict, Set, Tuple, Iterable
 import itertools
 
 from data.dados import dic_skills as SKILLS
-from utils.grafos import *  # validarGrafo, validaPreReq, checaPreReq
+from utils.grafos import *
 
 TARGET = 'S6'
 T_MAX = 350
