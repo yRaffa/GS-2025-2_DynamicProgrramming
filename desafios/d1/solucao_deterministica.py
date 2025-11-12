@@ -53,9 +53,9 @@ def solucaoDeterministica():
         }
     if not feas['Pre_Requisitos']:
         motivo = (
-            f'Para incluir {TARGET} é necessário ao menos {feas['Skills']} '
-            f'(Tempo={feas['Tempo']}, Complexidade={feas['Complexidade']}), '
-            f'o que viola T≤{T_MAX}, C≤{C_MAX}.'
+            f"Para incluir {TARGET} é necessário ao menos {feas['Skills']} "
+            f"(Tempo={feas['Tempo']}, Complexidade={feas['Complexidade']}), "
+            f"o que viola T≤{T_MAX}, C≤{C_MAX}."
         )
         return {
             'Viavel': False,
