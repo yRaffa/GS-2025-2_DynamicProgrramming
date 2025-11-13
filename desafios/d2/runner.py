@@ -7,6 +7,7 @@ from .modelo_critico import CRITICAS, verificaGrafoCritico
 from .calcular_permutacoes import listarPermutacoesComCusto
 from .analisar_ordens import resumoOrdensCriticas
 
+# Executa todas as etapas do desafio 02 e retorna um dicionário com os resultados
 def executarDesafio2() -> Dict[str, Any]:
     out: Dict[str, Any] = {}
     out['Modelo_Critico'] = {
