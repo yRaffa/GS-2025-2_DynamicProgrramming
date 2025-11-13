@@ -8,7 +8,7 @@ from .selecao_greedy import selecionarGreedy
 from .otimo_exaustivo import selecionarOtimoExaustivo
 from .analise_resultados import compararGreedyOtimo, contraexemploGreedy
 
-# # Executa todas as etapas do desafio 03 e retorna um dicionário com os resultados
+# Executa todas as etapas do desafio 03 e retorna um dicionário com os resultados
 def executarDesafio3(threshold_valor: int = 15) -> Dict[str, Any]:
     basicas = skillsBasicas()
     greedy_real = selecionarGreedy(threshold_valor=threshold_valor)
