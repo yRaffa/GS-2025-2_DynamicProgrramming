@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+seaborn
+ipywidgets
+ipykernel
+jupyter
+notebook
+nbconvert
+reportlab
+PyPDF2
