@@ -100,7 +100,7 @@ dic_skills = {
 
 ``` bash
 git clone <repo_url>
-cd SPRINT3_DynamicProgramming
+cd GS-2025-2_DynamicProgramming
 ```
 
 #### **Instale as dependências:**
