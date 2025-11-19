@@ -37,27 +37,27 @@ README.md               # Documentação do projeto
 
 ## 🧠 Resumo dos Desafios
 
-### 1️⃣ Desafio 1 — Caminho de Valor Máximo
+### 1️⃣ Desafio 1: Caminho de Valor Máximo
 
 Modelo de DP multidimensional (Tempo e Complexidade) para encontrar o melhor caminho até S6.
 Inclui simulação Monte Carlo com 1000 cenários e comparação determinístico × simulado.
 
-### 2️⃣ Desafio 2 — Verificação Crítica
+### 2️⃣ Desafio 2: Verificação Crítica
 
 Enumeração das 120 permutações das habilidades críticas (S3, S5, S7, S8, S9).
 Validação do grafo (ciclos, nós órfãos), cálculo de custos e análise estatística.
 
-### 3️⃣ Desafio 3 — Pivô Mais Rápido
+### 3️⃣ Desafio 3: Pivô Mais Rápido
 
 Heurística greedy (V/T) x solução ótima exaustiva.
 Contraexemplo mostrando falha do método greedy.
 
-### 4️⃣ Desafio 4 — Trilhas Paralelas
+### 4️⃣ Desafio 4: Trilhas Paralelas
 
 Quick Sort implementado manualmente para ordenar as 12 habilidades originais.
 Divisão em Sprint A e B + benchmark com sort nativo.
 
-### 5️⃣ Desafio 5 — Recomendar Próximas Habilidades
+### 5️⃣ Desafio 5: Recomendar Próximas Habilidades
 
 DP em horizonte finito (5 anos) para planejar trilha personalizada de aprendizado.
 Probabilidades de mercado, score V×P, trilha recomendada, heatmap e gráficos de evolução.
